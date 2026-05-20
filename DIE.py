@@ -2,8 +2,8 @@ import asyncio
 from telegram import Update
 from telegram.ext import Application, CommandHandler, CallbackContext
 
-TELEGRAM_BOT_TOKEN = '8714544471:AAH6gTvTTR3VqMJnZCow4x5anhQR0T9BnoA'
-ADMIN_USER_ID = 7837187893
+TELEGRAM_BOT_TOKEN = '8954997776:AAEI-BrendJDq3FCvEy-6s_RKrBDg1dKxg8'
+ADMIN_USER_ID = 7814400733
 USERS_FILE = 'users.txt'
 attack_in_progress = False
 
@@ -34,7 +34,7 @@ async def manage(update: Update, context: CallbackContext):
     args = context.args
 
     if chat_id != ADMIN_USER_ID:
-        await context.bot.send_message(chat_id=chat_id, text="*⚠️ You need admin approval to use this command.*", parse_mode='Markdown')
+        await context.bot.send_message(chat_id=chat_id, text="*⚠️ You need admin approval to use this command contact @blacklistedcarder1.*", parse_mode='Markdown')
         return
 
     if len(args) != 2:
